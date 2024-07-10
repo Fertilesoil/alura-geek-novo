@@ -1,0 +1,34 @@
+{
+  "produtos": [
+    {
+      "nome": "TV Ultra HD",
+      "preco": 2800,
+      "imagem": "https://cdn.pixabay.com/photo/2016/01/01/13/56/vintage-tv-1116587_1280.jpg",
+      "id": "c54fa3a3-d8f4-432b-b156-38467a214e29"
+    },
+    {
+      "nome": "Caixa de Som Bluetooth GHI",
+      "preco": 500,
+      "imagem": "https://cdn.pixabay.com/photo/2017/08/01/00/40/people-2562337_1280.jpg",
+      "id": "2"
+    },
+    {
+      "id": "61cf9102-dd19-4ab0-96f1-5dcc68c82e87",
+      "nome": "Não temer só sorrir",
+      "preco": "600",
+      "imagem": "https://imgs.search.brave.com/rRCYYD1UZ5-m9U07wIxfjo067pK6OGNtcViWriQrlBA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zb2Np/ZW50aWZpY2EuY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzA3L0RlcG9z/aXRwaG90b3NfNzM2/NDE0MDdfTC0xNTM2/eDEwMjEuanBn"
+    },
+    {
+      "id": "ac63b9a8-6bfd-4a36-9dbd-563e412f696b",
+      "nome": "A fruta mais bonita",
+      "preco": "900",
+      "imagem": "https://static.todamateria.com.br/upload/ab/ac/abacate-cke.jpg"
+    },
+    {
+      "id": "e960379f-1da2-4917-81ab-fa8e96d86acf",
+      "nome": "Caqui",
+      "preco": "567",
+      "imagem": "https://static.todamateria.com.br/upload/ca/qu/caqui-cke.jpg?auto_optimize=low"
+    }
+  ]
+}

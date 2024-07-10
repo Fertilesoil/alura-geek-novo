@@ -1,0 +1,246 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(90deg, #a56bf5, #d2e1fe);
+    
+}
+.cabecalho{
+    color: #e5e5e5;
+    background-color: #5300c8;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho img{
+    height: 60px;
+}
+
+.container_principal{
+    display: flex;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.produtos{
+    max-width: 841px;
+    height: 1115px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.container_principal_titulo{
+    font-size: 24px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    gap: 30px;
+    justify-content: center;   
+}
+
+
+.card_container{
+    width: 196px;
+    height: 270px;
+    background-color: #5D04D9;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_image {
+    width: 100%;
+    height: 150px; /* Altura fixa para todas as imagens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card_image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem preenchendo o espaço disponível */
+}
+
+
+.produto_descricao{
+    text-align: center;
+}
+
+.produto_descricao_texto{
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.produto_descricao_inferior{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produto_preco{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.botao_delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all .17s ease-in-out;
+}
+
+.botao_delete:hover {
+  transform: scale(1.1);
+  transition: all .17s ease-in-out;
+}
+
+.produto_preco img{
+    height: 24px;
+}
+
+.form{
+    max-width: 472px
+}
+
+.form_titulo{
+    font-size: 24px;
+}
+
+.form_items{
+    width: 472px;
+    height: 518px;
+}
+
+.form_input{
+    height: 58px;
+    border: 3px solid #03318c;
+    border-radius: 30px;
+    width: 392px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #03318C;
+    padding-left: 10px;
+}
+
+.form_botao{
+    width: 188px;
+    height: 55px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.enviar{
+    background-color: #03318C;
+    color: #ffffff;
+}
+
+.limpar{
+    background-color: #ffffff;
+    color: #03318C;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    align-items: center; /* Alinha os itens horizontalmente no centro */
+    text-align: center; /* Centraliza o texto */
+    height: 232px;
+    background-color: #5300c8;
+    color: #ffffff;
+}
+
+.rodape-topo {
+    display: flex;
+    align-items: center; 
+    margin-top: 40px;
+}
+
+.imagem_rodape {
+    height: 60px; 
+}
+
+.rodape_texto{
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+
+    .container_principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+            }
+
+    .item1 {
+        order: 1;
+    }
+    
+    .item2 {
+        order: 2;
+    }
+    
+
+    .cabecalho{
+        color: #e5e5e5;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form{
+        width: 430px;
+    }
+}
+
+

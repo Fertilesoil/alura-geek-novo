@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>AluraGeek</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="imagem_cabecalho" src="./images/heart.png" alt="imagem de coracao">
+    <h2>AluraGeek</h2>
+  </header>
+
+  <main class="container_principal">
+    <section class="produtos  item item2">
+      <h1 class="container_principal_titulo">MEUS PRODUTOS:</h1>
+      <div class="cards" data-lista>
+        <!-- <div class="card_container">
+                    <div class="card">
+                        <div class="card_image">
+                            <img class="imagem_produto" src="./images/stormtrooper.png" alt="imagem de produto">
+                        </div>
+                        <div class="produto_descricao">
+                            <p class="produto_descricao_texto">Stormtrooper</p>
+                            <div class="produto_descricao_inferior">
+                                <p class="produto_preco">R$ 60,00</p>
+                                <img class="produto_preco" src="./images/botao_delete.png" alt="icone de apagar">
+                            </div>
+                        </div>
+                    </div> -->
+      </div>
+      </div>
+    </section>
+
+
+    <section class="form item item1" data-form>
+      <div class="form_items">
+        <h1 class="form_titulo">ADICIONAR PRODUTO:</h1>
+        <form action="seu_script.php" method="post" enctype="multipart/form-data">
+          <label for="nome"></label><br>
+          <input class="form_input" type="text" id="nome" name="nome" required placeholder="nome..." data-nome><br><br>
+
+          <label for="preco"></label><br>
+          <input class="form_input" type="text" id="preco" name="preco" required placeholder="preço..."
+            data-preco><br><br>
+
+          <label for="imagem"></label><br>
+          <input class="form_input" type="text" id="imagem" name="imagem" accept="image/*" required
+            placeholder="imagem..." data-imagem><br><br>
+
+          <input class="form_botao enviar"  type="submit" value="Enviar">
+          <!-- <button class="form_botao enviar">Enviar</button> -->
+          <input class="form_botao limpar" type="submit" value="Limpar">
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <footer class="rodape">
+    <div class="rodape_conteudo">
+      <div class="rodape-topo">
+        <img class="imagem_rodape" src="./images/heart.png" alt="imagem de coracao">
+        <p>AluraGeek</p>
+      </div>
+    </div>
+    <p class="rodape_texto">Desenvolvido por THIERRY</p>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
