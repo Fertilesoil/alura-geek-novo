@@ -1,6 +1,6 @@
-import CardService from "./Service/CardService";
 import "./Eventos/Escutadores"
+import CardController from "./Controller/CardController";
 
 window.addEventListener("DOMContentLoaded", () => {
-  return CardService.mostrarCards();
+  return CardController.mostrarCards();
 });

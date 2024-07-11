@@ -1,14 +1,14 @@
-﻿import CardService from "../Service/CardService";
-import Componentes from "../Componentes/Componentes";
+﻿import Componentes from "../Componentes/Componentes";
 import Produto from "../Modelos/Produto";
+import CardController from "../Controller/CardController";
 
-const produto = new Produto("", "", "");
+export const produto = new Produto("", "", "");
 
 const campos = Object.values(Componentes).splice(0, 3);
 
 Componentes.botaoEnviar.onclick = async (evento) => {
   evento.preventDefault();
-  await CardService.criarCard(produto);
+  await CardController.criarNovoCard(produto);
   campos.forEach(campo => campo.value = "")
 }
 

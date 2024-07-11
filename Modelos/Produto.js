@@ -47,6 +47,13 @@ class Produto {
     const { name, value } = evento.target;
     this[name] = value;
   }
+
+  limparProduto = () => {
+    this.#id = "";
+    this.#nome = "";
+    this.#preco = "";
+    this.#imagem = "";
+  }
 }
 
 export default Produto;
